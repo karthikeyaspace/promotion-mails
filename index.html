@@ -10,27 +10,33 @@
     <style>
       body {
         font-family: "Poppins", Arial, sans-serif;
-        line-height: 1.6;
-        color: #000000;
-        background-color: #ffffff;
         margin: 0;
         padding: 0;
+      }
+      .outer-div {
+        background-color: #f6f1e9;
+        padding: 50px 0;
       }
       .container {
         max-width: 800px;
         margin: auto;
+        color: #000000;
+        background-color: white;
         overflow: hidden;
+        border-radius: 10px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       }
       .header {
         padding: 30px 30px 0 30px;
         text-align: center;
       }
+      .top-img {
+        width: 100%;
+        height: auto;
+      }
       .h1-text {
         font-size: 2.5em;
         margin: 0;
-        letter-spacing: 2px;
-        text-decoration: underline;
       }
       .p-text {
         font-size: 1.2em;
@@ -45,90 +51,124 @@
         height: auto;
         margin-bottom: 20px;
       }
-      h2 {
-        font-size: 1.8em;
-        margin-top: 0;
-        color: #000000;
-      }
-      h1 {
-        color: #000000;
-      }
-      h3 {
-        color: #000000;
+      .reg-button {
+        padding: 5px 10px;
+        background-color: blue;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 20px;
       }
       p {
-        color: #000000;
+        font-size: 1.1em;
+        line-height: 1.6;
       }
-      ul {
-        color: #000000;
+      li {
+        font-size: 1.1em;
+      }
+
+      @media screen and (max-width: 800px) {
+        .container {
+          border-radius: 0;
+        }
+        .outer-div {
+          padding: 0;
+        }
+        .header {
+          padding: 20px 20px 0 20px;
+        }
+        .content {
+          padding: 0 20px 20px 20px;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="header">
-        <h1 class="h1-text">Get Set Py</h1>
-        <p class="p-text">A hands-on journey with Python</p>
-      </div>
-      <div class="content">
+    <div class="outer-div">
+      <div class="container">
+        <img
+          src="https://raw.githubusercontent.com/karthikeyaveruturi/tempstoragecdn/refs/heads/main/dqqqq.jpg"
+          alt=""
+          class="top-img"
+        />
+        <div class="header">
+          <h1 class="h1-text">Get Set Py</h1>
+          <p class="p-text">A hands-on journey with Python</p>
+        </div>
         <img
           src="https://raw.githubusercontent.com/karthikeyaveruturi/tempstoragecdn/refs/heads/main/Get%20Set%20Py%20-%20Main%20poster.png"
           alt="Python Bootcamp"
           class="image"
         />
-        <h2>VJ Data Questers presents:</h2>
-        <h3>Python Bootcamp for 2nd Year Students!</h3>
-        <p>
-          Looking to master the essential frameworks of Python and create
-          machine learning applications? Join us for Get Set Py, a two-day
-          immersive bootcamp where you'll learn to work with:
-        </p>
-        <ul>
-          <li>NumPy</li>
-          <li>Pandas</li>
-          <li>Data Cleaning</li>
-          <li>Preprocessing</li>
-          <li>Data Visualization</li>
-        </ul>
-        <p>
-          By the end of the bootcamp, you'll have built your very own Machine
-          Learning project from scratch and deployed it on GitHub!
-        </p>
+        <div class="content">
+          <h3>Python Bootcamp for 2nd Year Students!</h3>
+          <p>
+            Looking to master the essential frameworks of Python and create
+            machine learning applications? Join us for Get Set Py, a two-day
+            immersive bootcamp where you'll learn to work with:
+          </p>
+          <ul>
+            <li>NumPy</li>
+            <li>Pandas</li>
+            <li>Data Cleaning</li>
+            <li>Preprocessing</li>
+            <li>Data Visualization</li>
+          </ul>
+          <p>
+            By the end of the bootcamp, you'll have built your very own Machine
+            Learning project from scratch.
+          </p>
 
-        <p>
-          ⚡ And that’s not all! There will be a competition where participants
-          will team up to build <strong>machine learning projects</strong>. The
-          best performers will win exciting gifts 🎁 and
-          <strong>certificates</strong>!
-        </p>
+          <p>
+            ⚡ And that’s not all! There will be a competition where
+            participants will team up to build
+            <strong>machine learning projects</strong>. The best performers will
+            win exciting gifts 🎁 and <strong>certificates</strong>!
+          </p>
 
-        <p>
-          📜 Participation <strong>certificates</strong> will be provided to all
-          attendees, so everyone walks away with recognition.
-        </p>
+          <p>
+            📜 Participation <strong>certificates</strong> will be provided to
+            all attendees, so everyone walks away with recognition.
+          </p>
 
-        <p>
-          ⚡ <strong>Limited Registrations</strong> Available! Don’t miss this
-          hands-on workshop! Laptops are mandatory to work on the real-world
-          projects.
-        </p>
+          <p>
+            ⚡ <strong>Limited Registrations</strong> Available! Don’t miss this
+            hands-on workshop! <strong>Laptops are mandatory</strong> to work on
+            the real-world projects.
+          </p>
 
-        <p>Event Details:</p>
-        <ul>
-          <li>🗓 <strong>Dates</strong>: 25th & 26th October 2024</li>
-          <li>🏢 <strong>Venue</strong>: APJ Abdul Kalam Auditorium</li>
-          <li>
-            🎤 <strong>Speaker</strong>: Sreeranjan Kumar Deverapalli, Senior
-            Software Developer, NSIC
-          </li>
-          <li>💸 <strong>Fee</strong>: ₹75 per person</li>
-        </ul>
-        <a
-          href="https://forms.gle/gSjQG1dBVGs7FYXE8"
-          target="_blank"
-          class="reg-button"
-          >Click here to register</a
-        >
+          <p>Event Details:</p>
+          <ul>
+            <li>
+              🗓 <strong>Dates</strong>:
+              <h3 style="color: rgb(13, 13, 144)">25th & 26th October 2024</h3>
+            </li>
+            <li>
+              🏢 <strong>Venue</strong>:
+              <h3 style="color: rgb(13, 13, 144)">
+                APJ Abdul Kalam Auditorium
+              </h3>
+            </li>
+            <li>
+              🎤 <strong>Speaker</strong>: Sreeranjan Kumar Deverapalli, Senior
+              Software Developer, NSIC
+            </li>
+            <li style="margin-top: 5px">
+              💸 <strong>Fee</strong>: ₹75 per person
+            </li>
+          </ul>
+          <a
+            href="https://forms.gle/gSjQG1dBVGs7FYXE8"
+            target="_blank"
+            class="reg-button"
+            >Click here to register
+          </a>
+          <p></p>
+          <img
+            src="https://raw.githubusercontent.com/karthikeyaveruturi/tempstoragecdn/refs/heads/main/cat-crazy-cat.gif"
+          />
+        </div>
       </div>
     </div>
   </body>
