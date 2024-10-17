@@ -14,5 +14,9 @@
 // "adithyakadukuntla@gmail.com"
 // ];
 
+const mails = [
+    "karthikeyaveruturi2005@gmail.com"
+]
+
 
 export { mails };
